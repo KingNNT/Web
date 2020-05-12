@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto";
+}
+
+
+/*          HEADER            */
+
+header {
+    position: relative;
+    width: 100%;
+}
+
+.top-menu-header {
+    position: absolute;
+    width: 80%;
+    top: 0px;
+    left: 30%;
+}
+
+#dropdownMenuButton {
+    background-color: white;
+}
+
+#dropdownMenuButton span {
+    color: Black;
+}
+
+#dropdownMenuButton a {
+    color: Black;
+}
+
+#language span {
+    margin-right: 10px;
+}
+
+#language img {
+    margin-left: 5px;
+    height: 25px;
+}
+
+nav {
+    background-color: white !important;
+    padding-bottom: 0px !important;
+}
+
+.navbar-brand img {
+    height: 100px;
+}
+
+.nav-item {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.nav-item img {
+    height: 38.8px;
+}
+
+
+/*          MAIN            */
+
+#left-side {
+    margin-top: 21px;
+    padding-right: 0px;
+}
+
+#menu,
+#categories,
+#reviews {
+    border: 1px solid black;
+}
+
+#menu {
+    background-color: #6e7c14;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 2px;
+}
+
+#menu .list-group-item {
+    margin: 1px 5px 1px 5px;
+    border: none;
+    border-radius: 30px !important;
+    background-color: #a0b222;
+    color: black;
+}
+
+#menu .list-group {
+    margin-bottom: 50px;
+}
+
+.list-group-item i {
+    margin-right: 10px;
+}
+
+#menu .cart {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#menu #cart-text {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
+
+#menu #cart-text p {
+    margin-bottom: 1px;
+}
+
+#menu .cart img {
+    margin-left: 5%;
+    width: 90%;
+}
+
+#categories #title {
+    background-color: orangered;
+    padding: 5% 5% 5% 5%;
+}
+
+#categories h4 {
+    font-weight: bold;
+    color: white;
+}
+
+#categories .list-group {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#categories .list-group-item {
+    margin: 1px 5px 1px 5px;
+    border: none;
+    border-radius: 30px !important;
+    color: black;
+}
+
+#reviews {
+    margin-top: 2px;
+    padding-bottom: 10px;
+}
+
+#reviews #title {
+    background-color: rgb(158, 81, 173);
+    padding: 5% 5% 5% 5%;
+}
+
+#reviews h4 {
+    font-weight: bold;
+    color: white;
+}
+
+#reviews #text-content {
+    margin-left: 15%;
+}
+
+#reviews #text-content a {
+    color: black;
+    text-decoration: underline;
+}
+
+#right-side {
+    padding-left: 0px;
+}
+
+#photo img {
+    width: 100%;
+}
+
+#right-side h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#right-side #content {
+    margin-left: 15px;
+}
+
+#right-side #decription {
+    margin-left: 30px;
+}
+
+#right-side #btn-info {
+    border: solid 1px black;
+}
+
+#right-side #btn-info i,
+#right-side #btn-info span {
+    color: black;
+}
+
+.product-item {
+    position: relative;
+}
+
+.product-item img {
+    width: 100%;
+}
+
+.product-item #watermask {
+    width: 90%;
+    position: absolute;
+    left: 9.8%;
+    bottom: 10%;
+    background-color: rgba(163, 152, 152, 0.568);
+}
+
+#watermask .col-9 {
+    text-decoration: underline;
+    color: black;
+}
+
+#watermask .col-3 {
+    background-color: rgba(44, 152, 202, 0.815);
+    color: white;
+}
+
+#payment img {
+    /* border: solid 1px #3dbb1e; */
+    /* padding: 0px; */
+    margin: 5px 0px 5px 0px;
+    width: 100%;
+}
+
+
+/*          FOOTER          */
+
+footer {
+    padding: 5px;
+}
+
+#top-footer span {
+    margin-left: 15px;
+    margin-right: 15px;
+}
