@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website CMS</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/e285d2cf60.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link href="./assets/css/style.min.css" rel="stylesheet" />
+    <script src="./assets/js/myJs.js"></script>
+</head>
+
+<body onload="showNotification()">
+    <header>
+        <div class="container" id="header">
+            <div class="jumbotron">
+                <h1>Website CMS</h1>
+            </div>
+            <div class="row">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link 3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link 4</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link 5</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="5000">
+                    <div class="toast-header">
+                        <svg class="rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                                <rect
+                                    fill="#007aff"
+                                    width="100%"
+                                    height="100%"
+                                />
+                            </svg>
+                        <strong class="mr-auto">Notification</strong>
+                        <small class="text-muted">1 mins ago</small>
+                        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                    </div>
+                    <div class="toast-body">
+                        Welcome back champ. You have 17 messages.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="h-25 d-inline-block"></div>
+        <div class="row" id="content">
+            <div class="col-2 bg"></div>
+            <div class="col-6" id="left">
+                <div class="alert">
+                    <div class="alert alert-success" role="alert">
+                        <i class="far fa-check-circle"></i>
+                        <strong>SUCCESS</strong> - THIS IS SUCCESS MESSAGE
+                        <span class="closebtn" onclick="hide(this.parentElement)">
+                                &times;
+                            </span>
+                    </div>
+                    <div class="alert alert-danger" role="alert">
+                        <i class="fas fa-window-close"></i>
+                        <strong>FAILURE</strong> - THIS IS FAILURE MESSAGE
+                        <span class="closebtn" onclick="hide(this.parentElement)">
+                                &times;
+                            </span>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <h3>Form</h3>
+                    <hr />
+                    <p>This is paragraph bla bla ...</p>
+                    <form>
+                        <div class="form-group">
+                            <label for="smallField">Small Form Field</label>
+                            <input type="" class="form-control col-4" id="small" placeholder="Small" />
+                        </div>
+                        <div class="form-group">
+                            <label for="largeField">Large Form Field</label>
+                            <input type="" class="form-control" id="large" placeholder="Large" />
+                        </div>
+                        <p>Check Boxes</p>
+                        <div class="form-group form-check">
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="" />This
+                                        is a checkbox</label
+                                    >
+                                </div>
+                                <div class="checkbox">
+                                    <label
+                                        ><input type="checkbox" value="" />This
+                                        is another checkbox</label
+                                    >
+                                </div>
+                            </div>
+                            <p>Radio Button</p>
+                            <div class="form-group">
+                                <div class="radio">
+                                    <label
+                                        ><input
+                                            type="radio"
+                                            name="optradio"
+                                            checked
+                                        />This is a radio option</label
+                                    >
+                                </div>
+                                <div class="radio">
+                                    <label
+                                        ><input
+                                            type="radio"
+                                            name="optradio"
+                                        />Another radio option</label
+                                    >
+                                </div>
+                                <div class="radio">
+                                    <label
+                                        ><input
+                                            type="radio"
+                                            name="optradio"
+                                        />Last radio option</label
+                                    >
+                                </div>
+                            </div>
+                            <p>Down Down( Combo ) List</p>
+                            <div class="dropdown">
+                                <button
+                                    class="btn btn-secondary dropdown-toggle"
+                                    type="button"
+                                    id="dropdownMenu2"
+                                    data-toggle="dropdown"
+                                >
+                                    Option 1
+                                </button>
+                                <div
+                                    class="dropdown-menu"
+                                    aria-labelledby="dropdownMenu2"
+                                >
+                                    <button class="dropdown-item" type="button">
+                                        Option 1
+                                    </button>
+                                    <button class="dropdown-item" type="button">
+                                        Option 2
+                                    </button>
+                                    <button class="dropdown-item" type="button">
+                                        Option 3
+                                    </button>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                    <div class="container">
+                        <h3>Table</h3>
+                        <hr />
+                        <p>This is paragraph bla bla ...</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Column 1</th>
+                                    <th>Column 2</th>
+                                    <th>Column 3</th>
+                                    <th>Column 4</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>John Doe</td>
+                                    <td>johndoe@hotmail.com</td>
+                                    <td>
+                                        <i class="far fa-folder"></i>
+                                        <i class="fas fa-user-shield"></i>
+                                        <i class="far fa-comment-alt"></i>
+                                        <i class="fas fa-times"></i>
+                                    </td>
+                                    <td>
+                                        <div class="checkbox">
+                                            <input type="checkbox" value="" />
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Jackie Ching</td>
+                                    <td>j.ching@hotmail.com</td>
+                                    <td>
+                                        <i class="far fa-folder"></i>
+                                        <i class="fas fa-user-shield"></i>
+                                        <i class="far fa-comment-alt"></i>
+                                        <i class="fas fa-times"></i>
+                                    </td>
+                                    <td>
+                                        <div class="checkbox">
+                                            <input type="checkbox" value="" />
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Samatha Dollock</td>
+                                    <td>sa.dollock@hotmail.com</td>
+                                    <td>
+                                        <i class="far fa-folder"></i>
+                                        <i class="fas fa-user-shield"></i>
+                                        <i class="far fa-comment-alt"></i>
+                                        <i class="fas fa-times"></i>
+                                    </td>
+                                    <td>
+                                        <div class="checkbox">
+                                            <input type="checkbox" value="" />
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="container">
+                        <h1>This is a H1 HEADING</h1>
+                        <hr />
+                        <p>This is a paragraph</p>
+                        <p>Bla Bla ...</p>
+                        <div class="row">
+                            <i class="fas fa-quote-left"></i>
+                            <blockquote class="blockquote">
+                                <p class="mb-0">Quote Bla bla bla</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <h2>This is a H2 HEADING</h2>
+                        <hr />
+                        <ul class="list-group" id="list-group-h2">
+                            <li class="list-group-item">
+                                <i class="fas fa-long-arrow-alt-right"></i> Item
+                                1
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-long-arrow-alt-right"></i> Item
+                                2
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-long-arrow-alt-right"></i> Item
+                                3
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="paragraph-second"></div>
+                </div>
+                <div class="col-2" id="right">
+                    <div class="alert-success">
+                        <h3>Lorem IPSum</h3>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-house-user"></i>
+                        <div>
+                            <a href="#">Sample Link 1</a>
+                            <p>Sample link 1</p>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <i class="fas fa-user"></i>
+                        <div>
+                            <a href="#">Sample Link 2</a>
+                            <p>Sample link 2</p>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <i class="fas fa-chart-bar"></i>
+                        <div>
+                            <a href="#">Sample Link 1</a>
+                            <p>Sample link 1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 bg"></div>
+            </div>
+        </main>
+
+        <footer class="page-footer font-small">
+            <div class="footer-copyright text-left py-3">
+                <span>© 2020 Copyright:</span>
+                <a href="https://www.facebook.com/Kinggg.NNT">KingNNT</a>
+            </div>
+        </footer>
+    </body>
+</html>
